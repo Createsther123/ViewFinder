@@ -14,6 +14,7 @@
 		434ECCA12302F142001CA54A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434ECC9F2302F142001CA54A /* LaunchScreen.storyboard */; };
 		434ECCAC2302F143001CA54A /* ViewFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434ECCAB2302F143001CA54A /* ViewFinderTests.swift */; };
 		434ECCB72302F143001CA54A /* ViewFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434ECCB62302F143001CA54A /* ViewFinderUITests.swift */; };
+		434ECCC82302FE6F001CA54A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434ECCC72302FE6F001CA54A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		434ECCB22302F143001CA54A /* ViewFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		434ECCB62302F143001CA54A /* ViewFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFinderUITests.swift; sourceTree = "<group>"; };
 		434ECCB82302F143001CA54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		434ECCC72302FE6F001CA54A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		434ECC872302F142001CA54A = {
 			isa = PBXGroup;
 			children = (
+				434ECCC72302FE6F001CA54A /* ViewController.swift */,
 				434ECC922302F142001CA54A /* ViewFinder */,
 				434ECCAA2302F143001CA54A /* ViewFinderTests */,
 				434ECCB52302F143001CA54A /* ViewFinderUITests */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434ECCC82302FE6F001CA54A /* ViewController.swift in Sources */,
 				434ECC9C2302F142001CA54A /* ViewFinder.xcdatamodeld in Sources */,
 				434ECC942302F142001CA54A /* AppDelegate.swift in Sources */,
 			);

@@ -48,12 +48,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nak-aS-aGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976.81159420289862" y="131.91964285714286"/>
+            <point key="canvasLocation" x="383" y="102"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Photo View Controller-->
         <scene sceneID="koP-tl-wcO">
             <objects>
-                <viewController id="vlD-3o-bpG" sceneMemberID="viewController">
+                <viewController id="vlD-3o-bpG" customClass="AddPhotoViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eTf-o2-UpU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lcx-M6-uxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692.753623188406" y="130.58035714285714"/>
+            <point key="canvasLocation" x="1399" y="102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FXr-Qz-Sta">
@@ -125,7 +125,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1He-x2-AZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66.666666666666671" y="131.91964285714286"/>
+            <point key="canvasLocation" x="-541" y="102"/>
         </scene>
     </scenes>
     <resources>
