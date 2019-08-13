@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="efM-5w-3C9">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ViewFinder-->
+        <scene sceneID="l2t-SE-5B9">
+            <objects>
+                <tableViewController id="Mko-EP-TL7" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hsk-Mv-jTC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aXW-Oo-m1u">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aXW-Oo-m1u" id="zNR-lo-kjp">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Mko-EP-TL7" id="283-mZ-1gk"/>
+                            <outlet property="delegate" destination="Mko-EP-TL7" id="Wax-Mg-tnt"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="IIu-CI-sje"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="ViewFinder" id="0xo-0P-xQO">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="3v3-jP-HCL"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EdA-W2-eQs">
+                            <connections>
+                                <segue destination="vlD-3o-bpG" kind="show" id="GJO-HY-EZ3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nak-aS-aGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.81159420289862" y="131.91964285714286"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="koP-tl-wcO">
+            <objects>
+                <viewController id="vlD-3o-bpG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eTf-o2-UpU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DandelionFlower" translatesAutoresizingMaskIntoConstraints="NO" id="QH2-q9-5f9">
+                                <rect key="frame" x="-675.5" y="128" width="1765.0000000000005" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qP-1c-VXc">
+                                <rect key="frame" x="38" y="452" width="69" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRK-Uf-CcM">
+                                <rect key="frame" x="309" y="452" width="66" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Albums"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRa-Gp-5gp">
+                                <rect key="frame" x="87" y="327" width="248" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I66-9v-kfy">
+                                <rect key="frame" x="136" y="398" width="157" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Save this Photo"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I66-9v-kfy" firstAttribute="leading" secondItem="zEa-yh-gs1" secondAttribute="leading" constant="136" id="1dI-Vk-LTN"/>
+                            <constraint firstItem="zEa-yh-gs1" firstAttribute="trailing" secondItem="I66-9v-kfy" secondAttribute="trailing" constant="121" id="5wg-r4-aRC"/>
+                            <constraint firstItem="zEa-yh-gs1" firstAttribute="bottom" secondItem="I66-9v-kfy" secondAttribute="bottom" constant="373" id="Jop-dV-skK"/>
+                            <constraint firstItem="7qP-1c-VXc" firstAttribute="top" secondItem="xRa-Gp-5gp" secondAttribute="bottom" constant="95" id="Nzy-DO-WOt"/>
+                            <constraint firstItem="JRK-Uf-CcM" firstAttribute="leading" secondItem="7qP-1c-VXc" secondAttribute="trailing" constant="202" id="OyX-HR-QlG"/>
+                            <constraint firstItem="I66-9v-kfy" firstAttribute="top" secondItem="xRa-Gp-5gp" secondAttribute="bottom" constant="41" id="YN6-eX-FQy"/>
+                            <constraint firstItem="7qP-1c-VXc" firstAttribute="leading" secondItem="zEa-yh-gs1" secondAttribute="leading" constant="38" id="f5O-0L-iDv"/>
+                            <constraint firstItem="xRa-Gp-5gp" firstAttribute="leading" secondItem="zEa-yh-gs1" secondAttribute="leading" constant="87" id="fCa-T3-iT4"/>
+                            <constraint firstItem="JRK-Uf-CcM" firstAttribute="leading" secondItem="7qP-1c-VXc" secondAttribute="trailing" constant="202" id="fMU-RU-Nxz"/>
+                            <constraint firstItem="I66-9v-kfy" firstAttribute="top" secondItem="xRa-Gp-5gp" secondAttribute="bottom" constant="41" id="maM-ge-Q93"/>
+                            <constraint firstItem="JRK-Uf-CcM" firstAttribute="top" secondItem="xRa-Gp-5gp" secondAttribute="bottom" constant="95" id="qjh-Ff-mCL"/>
+                            <constraint firstItem="zEa-yh-gs1" firstAttribute="trailing" secondItem="xRa-Gp-5gp" secondAttribute="trailing" constant="79" id="rE9-xm-PMs"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="JRK-Uf-CcM" secondAttribute="bottom" constant="325" id="syd-h3-q5g"/>
+                            <constraint firstItem="zEa-yh-gs1" firstAttribute="trailing" secondItem="JRK-Uf-CcM" secondAttribute="trailing" constant="39" id="t4b-CM-pa3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7qP-1c-VXc" secondAttribute="bottom" constant="325" id="v2d-rC-v0a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zEa-yh-gs1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lcx-M6-uxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1692.753623188406" y="130.58035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FXr-Qz-Sta">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="efM-5w-3C9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dg4-TF-Fyl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mko-EP-TL7" kind="relationship" relationship="rootViewController" id="Bvl-9H-WH9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1He-x2-AZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="131.91964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DandelionFlower" width="1765" height="1413"/>
+    </resources>
+</document>
